@@ -1,7 +1,28 @@
 <html>
     <head>
-        <h2>안녕하세요</h2>
-        <a href="www.naver.com">네이버당 </a>
-        <h1>추가</h1>
+        
+       
     </head>
+   <body style="margin : 0px;"> 
+       <div id="full-screen" > </div>
+        <script>
+
+
+            document.querySelector("#full-screen").style.backgroundColor="red";
+            
+            function OnresizeWindow() {
+                 document.querySelector("#full-screen").style.height = 
+                  window.innerHeight;
+            document.querySelector("#full-screen").style.width=
+                window.innerWidth;
+            }
+
+            OnresizeWindow();
+           
+           window.addEventListener('resize' ,OnresizeWindow);
+            </script>
+
+        
+      
+        </body>
 </html>
